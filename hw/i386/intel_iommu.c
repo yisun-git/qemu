@@ -1633,6 +1633,8 @@ static bool vtd_do_iommu_translate(VTDAddressSpace *vtd_as, PCIBus *bus,
     uint8_t access_flags;
     VTDIOTLBEntry *iotlb_entry;
 
+    printk("yisun for rebase test.\n");
+
     /*
      * We have standalone memory region for interrupt addresses, we
      * should never receive translation requests in this region.
